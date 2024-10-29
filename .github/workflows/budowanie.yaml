@@ -31,7 +31,7 @@ jobs:
           path: DumbAPI/bin/Release/net8.0
 
       - name: Publish
-        user: elgohr/Publish-Docker-Github-Actions@v5
+        uses: elgohr/Publish-Docker-Github-Actions@v5
         with:
           name: pr1v/dumbapi
           username: ${{ secrets.DOCKER_USERNAME }}
