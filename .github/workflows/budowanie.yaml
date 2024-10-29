@@ -18,8 +18,8 @@ jobs:
         run: dotnet build --configuration Release
         working-directory: DumbAPI
 
-          #      - name: Upload Artifacts
-          #        uses: actions/upload-artifact@v2
-          #        with:
-          #          name: hello-world.win-x64
-          #          path: HelloWorld/bin/Release/net7.0/win-x64/
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: dumbapi
+          path: DumbAPI/bin/Release/net8.0
