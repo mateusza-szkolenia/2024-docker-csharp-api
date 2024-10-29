@@ -1,0 +1,22 @@
+---
+name: Zbuduj projekt
+
+jobs:
+  build:
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4.2.2
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+
+      - name: Build
+        run: dotnet build --configuration Release
+        working-directory: DumbAPI
+
+          #      - name: Upload Artifacts
+          #        uses: actions/upload-artifact@v2
+          #        with:
+          #          name: hello-world.win-x64
+          #          path: HelloWorld/bin/Release/net7.0/win-x64/
