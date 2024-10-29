@@ -14,9 +14,15 @@ jobs:
       - name: Setup .NET
         uses: actions/setup-dotnet@v4
 
-      - name: Build
+      - name: Build DumpAPI App
         run: dotnet build --configuration Release
         working-directory: DumbAPI
+
+      - name: Build Docker image
+        run: docker build -t dumbapi:latest .
+
+      - name: Show images
+        run: docker images
 
       - name: Upload Artifacts
         uses: actions/upload-artifact@v4

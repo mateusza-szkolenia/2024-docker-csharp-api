@@ -3,5 +3,7 @@
 *.sln
 */obj/
 */bin/
+*/out/
 */.vs/
 *swp
+
