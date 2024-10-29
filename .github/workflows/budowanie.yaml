@@ -1,6 +1,8 @@
 ---
 name: Zbuduj projekt
 
+on: push
+
 jobs:
   build:
 
