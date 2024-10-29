@@ -1,0 +1,7 @@
+*.exe
+*.dll
+*.sln
+*/obj/
+*/bin/
+*/.vs/
+*swp
